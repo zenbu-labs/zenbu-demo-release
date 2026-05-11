@@ -1,0 +1,12 @@
+{
+  "id": "f00e4ab6-5a75-4a59-b66b-db14cc4fe36a",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "fields": {
+    "count": {
+      "kind": "data",
+      "hasDefault": true,
+      "typeHash": "8388a0b5afc11559",
+      "default": 0
+    }
+  }
+}
