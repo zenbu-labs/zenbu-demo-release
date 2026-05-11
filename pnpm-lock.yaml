@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.0
         version: 5.2.0(vite@6.4.2(@types/node@22.19.18)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.21.0))
       '@zenbujs/core':
-        specifier: ^0.0.17
-        version: 0.0.17(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(lightningcss@1.32.0)(react@19.2.6)(zod@4.4.3)
+        specifier: ^0.0.22
+        version: 0.0.22(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(lightningcss@1.32.0)(react@19.2.6)(zod@4.4.3)
       lucide-react:
         specifier: ^1.14.0
         version: 1.14.0(react@19.2.6)
@@ -937,6 +937,17 @@ packages:
 
   '@zenbujs/core@0.0.17':
     resolution: {integrity: sha512-7kvo/0cn/s8zimqgx27ysIZN3AwiCDReDK76ZlcZgIEFazneUbwVjz1TtoxF+XouUI1zu0hdrmPqKvu+/TXrJA==}
+    hasBin: true
+    peerDependencies:
+      electron: ^42.0.0
+      react: '>=18'
+      zod: ^4
+    peerDependenciesMeta:
+      react:
+        optional: true
+
+  '@zenbujs/core@0.0.22':
+    resolution: {integrity: sha512-896eA9r4vujpjrJSZhDybhrmLPc71gWGtFXsA1K8cnqolEgiBiNIy/evPtG5vrtGN4y5gr5OfarFKJHpPO3Q5Q==}
     hasBin: true
     peerDependencies:
       electron: ^42.0.0
@@ -3099,6 +3110,38 @@ snapshots:
     optional: true
 
   '@zenbujs/core@0.0.17(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(lightningcss@1.32.0)(react@19.2.6)(zod@4.4.3)':
+    dependencies:
+      '@parcel/watcher': 2.5.6
+      '@vitejs/plugin-react': 5.2.0(vite@6.4.2(@types/node@22.19.18)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.21.0))
+      '@zenbujs/hmr': 0.0.2
+      effect: 3.21.2
+      electron: 42.0.1
+      electron-context-menu: 4.1.2
+      isomorphic-git: 1.37.6
+      nanoid: 5.1.11
+      semver: 7.8.0
+      tsx: 4.21.0
+      vite: 6.4.2(@types/node@22.19.18)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.21.0)
+      ws: 8.20.0
+      zod: 4.4.3
+    optionalDependencies:
+      react: 19.2.6
+    transitivePeerDependencies:
+      - '@types/node'
+      - bufferutil
+      - jiti
+      - less
+      - lightningcss
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - utf-8-validate
+      - yaml
+
+  '@zenbujs/core@0.0.22(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(lightningcss@1.32.0)(react@19.2.6)(zod@4.4.3)':
     dependencies:
       '@parcel/watcher': 2.5.6
       '@vitejs/plugin-react': 5.2.0(vite@6.4.2(@types/node@22.19.18)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.21.0))
